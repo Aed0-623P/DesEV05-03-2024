@@ -6,15 +6,12 @@ def verificar(alternativas, eleccion):
     eleccion = ['a', 'b', 'c','d'].index(eleccion)
 
     # generar lógica para determinar respuestas correctas
-    ##########################################################################################
-    pass
-    
-    
-    
-    
-    ##########################################################################################
-    return correcto
-
+    if alternativas[eleccion][1] == 1:
+        print('Respuesta Correcta')
+        return True
+    else:
+        print('Respuesta Incorrecta')
+        return False
 
 
 if __name__ == '__main__':

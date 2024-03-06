@@ -3,7 +3,7 @@ def validate(opciones, eleccion):
     ##########################################################################
     while eleccion not in opciones:
         eleccion = input(
-            "Opción no válida, ingrese de las una opciones válidas: "
+            "Opción no válida, ingrese una de las opciones válidas: "
         ).lower()
     return eleccion
 

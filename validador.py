@@ -1,7 +1,7 @@
 def validate(opciones, eleccion):
-    # Definir validación de eleccion
-    ##########################################################################
-    while eleccion not in opciones:
+    opciones2 = opciones
+    sub = [sublist[0] for sublist in opciones2]
+    while eleccion not in sub:
         eleccion = input(
             "Opción no válida, ingrese una de las opciones válidas: "
         ).lower()
@@ -11,6 +11,6 @@ def validate(opciones, eleccion):
 if __name__ == "__main__":
     eleccion = input("Ingresa una Opción: ").lower()
     # letras = ['a','b','c','d'] # pueden probar con letras también para verificar su funcionamiento.
-    numeros = ["0", "1"]
+    numeros = [["a", "b"],["c","d"]]
     # Si se ingresan valores no validos a eleccion debe seguir preguntando
     validate(numeros, eleccion)
